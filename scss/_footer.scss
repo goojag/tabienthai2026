@@ -1,0 +1,64 @@
+footer{
+  background: $themecolor1;
+  padding: 80px 0;
+  color:#fff;
+
+  .copyright-foot{
+    padding:20px 0 10px 0;
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+  .social-foot{
+    a{
+      margin-right:10px;
+
+      img{
+        height: 35px;
+        width: auto;
+      }
+    }
+  }
+
+  a{
+    color:#fff;
+
+    &:hover{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  ul{
+
+    h3{
+      font-weight: 300;
+      font-size: 22px;
+      margin: 0 0 30px;
+    }
+    
+    li{
+      list-style: none;
+      font-weight: 200;
+      
+      p{
+        margin: 0 0 10px;
+      }
+    }
+  }
+
+  .subscrib-btn{
+    background: url("../images/icons/subscrib.svg") #fff no-repeat right 10px center;
+  }
+}
+
+.shadow{
+  background:rgba(0,0,0,0.7);
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index: 11;
+  display: none;
+}

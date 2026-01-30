@@ -1,0 +1,12 @@
+{
+  "name": "789tabien",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch scss:css --style expanded"
+  },
+  "dependencies": {
+    "sass": "^1.93.2"
+  }
+}

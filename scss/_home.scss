@@ -1,0 +1,47 @@
+.banner-main{
+  width: 100%;
+
+  a, img{
+    display: block;
+    width: 100%;
+  }
+}
+
+.home-search{
+  background: url("../images/bg-form-search.jpg");
+  background-size: 100%;
+  padding: 50px;
+  width: 100%;
+  color: #fff;
+
+  h2{
+    margin: 0 0 15px;
+    line-height: 1;
+  }
+}
+
+.tabien-ig{
+  background: #F1F6FF;
+  padding: 30px 0;
+
+  ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+
+    li{
+      list-style: none;
+
+      &:nth-child(2n){
+        margin-top: 20px;
+      }
+
+      a,img{
+        display: block;
+        width:100%;
+      }
+    }
+  }
+}

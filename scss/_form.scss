@@ -1,0 +1,90 @@
+.form-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+input[type=text], input[type=email] {
+  -webkit-appearance: none;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    font-family: Kanit;
+    font-weight: 200;
+    
+}
+
+.select-box{
+  position: relative;
+  width: 100%;
+
+  select {
+    -webkit-appearance: none;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    font-family: Kanit;
+    font-weight: 300;
+
+    &:focus{
+      -webkit-appearance: none;
+    }
+  }
+
+  &:after{
+    content:'';
+    border:7px solid transparent;
+    border-top-color:$themecolor4;
+    position: absolute;
+    top:40%;
+    right:10px;
+    height: 0;
+  }
+  
+}
+
+.search-form{
+  width: 1000px;
+  margin: auto;
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    width:100%;
+    justify-content: space-between;
+
+    .column{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+
+      button{
+          width:100%;
+
+          img{
+            margin-left: 30px;
+          }
+        }
+    }
+  }
+}
+
