@@ -162,74 +162,29 @@
 
     <section class="premium-number">
       <div class="container">
+        <h3>เบอร์โทรระดับพรีเมียม</h3>
+        <h4>สนใจติดต่อ คุณแพท 098-555-5555 </h4>
+        <ul class="number-list">
+          <?php for($i = 0; $i < 14; $i++) { ?>
 
+          <li>
+            <div class="card-number">
+              <div class="card-number-inner">
+                <h3 class="number">081-555-5555</h3>
+              <div class="bottom">
+                <span class="price-label">ราคา</span>
+                <span class="price">2,990,000</span>
+              </div>
+              </div>
+            </div>
+          </li>
+
+          <?php } ?>
+        </ul>
       </div>
     </section>
 
-    <div class="wrapper">
-
-      <div class="container">
-        <div class="box-tabien">
-          <div class="tabien-select">
-            <div class="select-box">
-              <select name="tabien-name" id="select-tabien">
-                <option value="0">เลือกทะเบียน</option>
-                <option value="1">ทะเบียนรถสวย มาใหม่</option>
-                <option value="2">ทะเบียนรถสวย VIP</option>
-                <option value="3">เลขร้อย เลขพัน</option>
-                <option value="4">เลขเรียง</option>
-              </select>
-            </div>
-          </div>
-          <div class="tabien-list">
-            <div class="tabien-section">
-              <h2 class="section-h">ทะเบียนทั้งหมด</h2>
-              <ul>
-                <?php for($i=1; $i<31; $i++) { ?>
-                <li>
-                  <a href="">
-                    <div class="tabien-img">
-                      <img src="images/tabien-img.jpg" alt="">
-                      <div class="tabien-number">กข 123</div>
-                    </div>
-
-                    <div class="tabien-bottom">
-                      <span>250,000</span>
-                      <span class="tabien-sum">ผลรวม 40</span>
-                    </div>
-                  </a>
-                </li>
-                <?php } ?>
-              </ul>
-            </div><!-- end .tabien-section -->
-          </div> <!-- end .tabien-list -->
-        </div> <!-- end .box-tabien -->
-      </div> <!-- end .container -->
-
-      <section class="tabien-ig">
-        <div class="container">
-          <h2 class="section-h">Instagram</h2>
-          <ul>
-            <li><a href=""><img src="images/ig1.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/ig2.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/ig3.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/ig1.jpg" alt=""></a></li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="why-9na">
-        <img src="images/why-9na.png" alt="" class="why-img">
-
-        <div class="why-box-text">
-          <h3>ทำไมต้องก้าวหน้าทะเบียน</h3>
-          <p>
-            Download the app to manage your projects, keep track of your bookings and stay on track with the progress.
-          </p>
-        </div>
-      </section>
-
-    </div> <!-- end .wrapper -->
+    
 
     <?php include_once('inc/footer.php'); ?>
 

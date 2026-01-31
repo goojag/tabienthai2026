@@ -1,0 +1,58 @@
+.card-number {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #c3862b,
+    #f1d085,
+    #f3d169,
+    #e8a45c,
+    #b68340
+  );
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 3px;
+  color: $textcolor2;
+
+  .card-number-inner {
+    background: #fff;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .number {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 800;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .bottom {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .price-label {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 45%;
+      height: 100%;
+      padding-right: 12px;
+      background: linear-gradient(
+        45deg,
+        #c3862b 0%,
+        #f1d085 25%,
+        #f3d169 50%,
+        #e8a45c 75%,
+        #b68340 100%
+      );
+    }
+  }
+}
