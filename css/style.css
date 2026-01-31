@@ -23,7 +23,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #121D32;
+  color: #7B5C4B;
 }
 
 ul {
@@ -37,7 +37,7 @@ ul {
 
 .section-h {
   margin: 0 0 30px;
-  color: #3F3027;
+  color: #7B5C4B;
   font-size: 35px;
 }
 .section-h:after {
@@ -55,7 +55,7 @@ ul {
 }
 
 .allpage .top {
-  background: #3F3027;
+  background: #7B5C4B;
   background-size: auto 320%;
   position: static;
 }
@@ -67,14 +67,14 @@ ul {
   line-height: 1.8;
 }
 .box-detail h1 {
-  color: #121D32;
+  color: #7B5C4B;
   line-height: 1.4;
   margin: 0 0 20px;
   font-size: 30px;
   padding: 0;
 }
 .box-detail a {
-  color: #121D32;
+  color: #7B5C4B;
 }
 .box-detail a:hover {
   text-decoration: underline;
@@ -137,12 +137,14 @@ input[type=text], input[type=email] {
 }
 .select-box:after {
   content: "";
-  border: 7px solid transparent;
-  border-top-color: #FC840C;
+  display: block;
+  background: url("../images/icons/arr-down.svg") no-repeat center center;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
   position: absolute;
-  top: 40%;
+  top: 15px;
   right: 10px;
-  height: 0;
 }
 
 .search-form {
@@ -169,11 +171,12 @@ input[type=text], input[type=email] {
 }
 
 .btn-main {
-  background: rgb(231, 130, 30);
-  border: none;
+  background: #7B5C4B;
+  border: 1.5px solid #D6D6D6;
   border-radius: 7px;
   padding: 8px 30px;
   color: #fff;
+  height: 40px;
 }
 
 header {
@@ -185,7 +188,7 @@ header {
 }
 header .top-bar {
   padding: 10px 0;
-  background: #3F3027;
+  background: #7B5C4B;
 }
 header .top-bar .container {
   display: flex;
@@ -202,6 +205,24 @@ header .top-bar span {
   height: 8px;
   background: #fff;
   border-radius: 50%;
+}
+header .top-bar-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 0.5px solid #C0AB9A;
+  font-size: 14px;
+}
+header .top-bar-2 .right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header .top-bar-2 .right a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 header .logo {
   width: 152px;
@@ -250,7 +271,7 @@ header .menu-top ul li a:hover {
   width: 300px;
 }
 .box-tabien .tabien-select .select-box select {
-  border: 1px solid #3F3027;
+  border: 1px solid #7B5C4B;
 }
 
 .tabien-section {
@@ -351,7 +372,7 @@ header .menu-top ul li a:hover {
 }
 
 footer {
-  background: #3F3027;
+  background: #7B5C4B;
   padding: 80px 0;
   color: #fff;
 }

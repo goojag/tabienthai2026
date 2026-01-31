@@ -9,7 +9,15 @@
     </div>
   </div>
   <div class="container">
-    <div class="d-flex menu-container">
+    <section class="top-bar-2">
+      <div class="left"><a href="/"><img src="images/icons/phone.svg" alt="">
+          098-555-5555</a></div>
+      <div class="right">
+        <a href="/"><img src="images/icons/dbd.svg" alt=""></a>
+        <a href="/"><img src="images/icons/line.svg" alt=""><span>@tabiendee</span></a>
+      </div>
+    </section>
+    <section class="d-flex menu-container">
       <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
 
       <nav class="menu-top">
@@ -22,7 +30,7 @@
           <li><a href="">เลือกหมวด</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
   </div> <!-- end .container -->
 </header>
 

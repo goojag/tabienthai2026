@@ -50,12 +50,14 @@ input[type=text], input[type=email] {
 
   &:after{
     content:'';
-    border:7px solid transparent;
-    border-top-color:$themecolor4;
+    display: block;
+    background: url('../images/icons/arr-down.svg') no-repeat center center;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
     position: absolute;
-    top:40%;
+    top:15px;
     right:10px;
-    height: 0;
   }
   
 }

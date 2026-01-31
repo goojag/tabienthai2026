@@ -29,6 +29,27 @@ header {
       }
   }
 
+  .top-bar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 0.5px solid #C0AB9A;
+    font-size: 14px;
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 9px
+      }
+    }
+  }
+
   .logo {
     width: 152px;
     display: block;
