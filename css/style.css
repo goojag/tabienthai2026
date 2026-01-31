@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 html,
 body {
   margin: 0;
@@ -23,7 +24,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #7B5C4B;
+  color: #C0AB9A;
 }
 
 ul {
@@ -35,59 +36,19 @@ ul {
   max-width: 1280px;
 }
 
-.section-h {
-  margin: 0 0 30px;
-  color: #7B5C4B;
-  font-size: 35px;
-}
-.section-h:after {
-  content: "";
-  width: 140px;
-  height: 3px;
-  background: #FC840C;
-  display: block;
-  margin: 5px 0 0;
+* {
+  box-sizing: border-box;
 }
 
-.wrapper.all {
-  padding: 40px 20px;
-  background-size: cover;
+img {
+  display: inline-block;
+  width: 100%;
 }
 
-.allpage .top {
-  background: #7B5C4B;
-  background-size: auto 320%;
-  position: static;
+.bg-gradient, .card-tabein .card-price {
+  background: linear-gradient(45deg, #3F3027 0%, #765642 100%);
 }
 
-.box-detail {
-  padding: 20px 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #121D32;
-  line-height: 1.8;
-}
-.box-detail h1 {
-  color: #7B5C4B;
-  line-height: 1.4;
-  margin: 0 0 20px;
-  font-size: 30px;
-  padding: 0;
-}
-.box-detail a {
-  color: #7B5C4B;
-}
-.box-detail a:hover {
-  text-decoration: underline;
-}
-
-@media only screen and (max-width: 767px) {
-  .box-detail {
-    padding: 20px;
-  }
-  .box-detail h1 {
-    font-size: 24px;
-  }
-}
 .form-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -214,6 +175,9 @@ header .top-bar-2 {
   border-bottom: 0.5px solid #C0AB9A;
   font-size: 14px;
 }
+header .top-bar-2 .left img {
+  width: 25px;
+}
 header .top-bar-2 .right {
   display: flex;
   align-items: center;
@@ -259,74 +223,54 @@ header .menu-top ul li a:hover {
   display: none;
 }
 
-.box-tabien {
-  position: relative;
-}
-.box-tabien .tabien-select {
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-.box-tabien .tabien-select .select-box {
-  width: 300px;
-}
-.box-tabien .tabien-select .select-box select {
-  border: 1px solid #7B5C4B;
-}
-
-.tabien-section {
-  margin: 0 0 50px;
-}
-
-.tabien-list {
-  width: 100%;
-}
-.tabien-list ul {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
-}
-.tabien-list ul li {
-  list-style: none;
-  width: 100%;
-}
-.tabien-list ul li .tabien-img {
-  background: #fff;
-  width: 100%;
-  position: relative;
-}
-.tabien-list ul li .tabien-img img {
-  display: block;
-  width: 100%;
-}
-.tabien-list ul li .tabien-img .tabien-number {
-  width: 100%;
-  height: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  text-align: center;
-  color: #121D32;
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-.tabien-list ul li a {
-  color: #121D32;
-}
-.tabien-list ul li .tabien-bottom {
+.card-tabein {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 10px 0;
-  opacity: 0.8;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
 }
-
-.tabien-scroll {
-  height: 85vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 100px 0 100px 40px;
-  box-sizing: border-box;
+.card-tabein.card-special {
+  background: #fff;
+}
+.card-tabein .tabien-thumb {
+  position: relative;
+}
+.card-tabein .card-content {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+  font-family: "Sarabun", sans-serif;
+}
+.card-tabein .card-content p {
+  margin: 0;
+  font-size: 16px;
+}
+.card-tabein .card-content .card-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 15% 0 5px;
+}
+.card-tabein .card-price {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+  height: 35px;
+  border-radius: 2px;
+  border: 2px solid #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-tabein.big .card-content .card-title {
+  font-size: 58px;
+}
+.card-tabein.big .card-content p {
+  font-size: 21px;
 }
 
 .banner-main {
@@ -369,6 +313,82 @@ header .menu-top ul li a:hover {
 .tabien-ig ul li a, .tabien-ig ul li img {
   display: block;
   width: 100%;
+}
+
+.special-tabien {
+  padding: 50px 0;
+}
+.special-tabien .special-tabien-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1080px;
+  margin: 0 auto;
+}
+.special-tabien .special-tabien-content .left {
+  width: calc(100% - 630px);
+  text-align: center;
+  padding: 0 35px 0 0;
+}
+.special-tabien .special-tabien-content .left h2, .special-tabien .special-tabien-content .left h3, .special-tabien .special-tabien-content .left h4 {
+  font-family: "Kanit", sans-serif;
+}
+.special-tabien .special-tabien-content .left h2 {
+  margin: 0 0 0px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.special-tabien .special-tabien-content .left h3 {
+  font-size: 37px;
+  color: #3F3027;
+  font-weight: 400;
+  margin: 0;
+}
+.special-tabien .special-tabien-content .left h4 {
+  font-size: 32px;
+  background: #C0AB9A;
+  padding: 12px;
+  color: #3F3027;
+  font-weight: 600;
+  margin: 20px 0 0;
+  border-radius: 4px;
+}
+.special-tabien .special-tabien-content .left .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.special-tabien .special-tabien-content .left .contact a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+.special-tabien .special-tabien-content .left .contact a img {
+  width: 25px;
+}
+.special-tabien .special-tabien-content .right {
+  width: 630px;
+}
+.special-tabien .special-tabien-content .right .first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 22px;
+}
+.special-tabien .special-tabien-content .right .second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.premium-number {
+  background: url("../images/bg-wood.jpg") no-repeat center/cover;
+  min-height: 600px;
 }
 
 footer {

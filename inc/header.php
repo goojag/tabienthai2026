@@ -10,7 +10,7 @@
   </div>
   <div class="container">
     <section class="top-bar-2">
-      <div class="left"><a href="/"><img src="images/icons/phone.svg" alt="">
+      <div class="left"><a href="/"><img src="images/icons/phone.svg" width="25" alt="">
           098-555-5555</a></div>
       <div class="right">
         <a href="/"><img src="images/icons/dbd.svg" alt=""></a>

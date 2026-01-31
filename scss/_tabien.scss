@@ -1,82 +1,62 @@
-.box-tabien{
-
+.card-tabein {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   position: relative;
 
-  .tabien-select{
+  &.card-special {
+    background: #fff;
+  }
+
+  .tabien-thumb {
+    position: relative;
+  }
+
+  .card-content {
     position: absolute;
-    right:0;
-    top: 10px;
+    width: fit-content;
+    height: fit-content;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    font-family: "Sarabun", sans-serif;
 
-    .select-box{
-      width:300px;
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
 
-      select{
-        border:1px solid $themecolor1;
+    .card-title {
+      font-size: 38px;
+      font-weight: 700;
+      margin: 15% 0 5px;
+    }
+  }
+
+  .card-price {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    @extend .bg-gradient;
+    color: #fff;
+    height: 35px;
+    border-radius: 2px;
+    border: 2px solid #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.big {
+    .card-content {
+      .card-title {
+        font-size: 58px;
+      }
+
+      p {
+        font-size: 21px;
       }
     }
   }
-}
-
-
-
-.tabien-section{
-  margin:0 0 50px;
-}
-
-.tabien-list{
-  width:100%;
-
-  ul{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr) ;
-    gap: 25px;
-
-    li{
-      list-style: none;
-      width: 100%;
-
-      .tabien-img{
-        background: #fff;
-        width: 100%;
-        position: relative;
-
-        img{
-          display: block;
-          width:100%;
-        }
-
-        .tabien-number{
-          width:100%;
-          height: 30px;
-          top:0;
-          bottom:0;
-          margin:auto;
-          position: absolute;
-          text-align: center;
-          color:$textcolor2;
-          font-weight: 500;
-          font-size: 1.4rem;
-        }
-      }
-
-      a{
-        color: $textcolor2;
-      }
-
-      .tabien-bottom{
-        display: flex;
-        justify-content: space-between;
-        padding:10px 10px 0;
-        opacity: 0.8;
-      }
-    }
-  }
-}
-
-.tabien-scroll{
-  height: 85vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin:100px 0 100px 40px;
-  box-sizing: border-box;
 }

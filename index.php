@@ -109,23 +109,60 @@
         <div class="special-tabien-content">
           <div class="left">
             <h2>ทะเบียนหมวดพิเศษ</h2>
-            <div>ให้คุณเป็นเจ้าของ
-              ในราคาสุดพิเศษ</div>
-            <div>
-              <a href="/">098-555-5555</a>
-              <a href="/">@tabiendee</a>
+            <h3>เลขสวยโดนใจ ความหมายดี</h3>
+            <h4>ให้คุณเป็นเจ้าของ<br/>
+              ในราคาสุดพิเศษ</h4>
+            <div class="contact">
+              <a href="/"><img src="images/icons/phone.svg" alt=""><span>098-555-5555</span></a>
+              <a href="/"><img src="images/icons/line.svg" alt=""><span>@tabiendee</span></a>
             </div>
           </div>
 
           <div class="right">
             <div class="first">
-
+              <?php for($i = 0; $i < 2; $i++): ?>
+                <div class="card-tabein card-special big">
+                  <div class="tabien-thumb">
+                    <img src="images/tabien-mockup.png" alt="">
+                      <div class="card-content">
+                      <h3 class="card-title">สิริ 9</h3>
+                      <p>กรุงเทพมหานคร</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card-price bg-gradient">
+                    2,990,000
+                  </div>
+                </div>
+              <?php endfor; ?>
             </div>
-            <div class="second">
 
+            <div class="second">
+              <?php for($i = 0; $i < 3; $i++): ?>
+                <div class="card-tabein card-special">
+                  <div class="tabien-thumb">
+                    <img src="images/tabien-mockup.png" alt="">
+
+                    <div class="card-content">
+                      <h3 class="card-title">สิริ 9</h3>
+                      <p>กรุงเทพมหานคร</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card-price bg-gradient">
+                    2,990,000
+                  </div>
+                </div>
+              <?php endfor; ?>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="premium-number">
+      <div class="container">
+
       </div>
     </section>
 

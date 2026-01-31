@@ -37,6 +37,12 @@ header {
     border-bottom: 0.5px solid #C0AB9A;
     font-size: 14px;
 
+    .left {
+      img {
+        width: 25px;
+      }
+    }
+
     .right {
       display: flex;
       align-items: center;
