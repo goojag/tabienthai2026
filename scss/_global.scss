@@ -7,6 +7,7 @@ body {
 html{
   font-size:16px;
 }
+
 body {
   background: #fff;
   font: 400 1rem/1.5 "IBM Plex Sans Thai", sans-serif;
@@ -41,9 +42,8 @@ ul{
 
 img {
   display: inline-block;
-  width: 100%;
+  max-width: 100%;
 }
-
 
 .bg-gradient {
   background: linear-gradient(45deg, #3F3027 0%, #765642 100%);

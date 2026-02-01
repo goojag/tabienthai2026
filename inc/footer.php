@@ -53,6 +53,7 @@
 <div class="shadow"></div>
 
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js?v=<?=time()?>"></script>
 
 <script>
 $(function() {

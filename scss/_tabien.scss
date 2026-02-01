@@ -60,3 +60,31 @@
     }
   }
 }
+
+.tabien-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+
+  li {
+    list-style: none;
+  }
+}
+
+.tabien-box {
+  .tabien-list-box {
+    display: none;
+  }
+
+  &.show {
+    .tabien-list-box {
+      display: block;
+    }
+
+    .btn-toggle {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
