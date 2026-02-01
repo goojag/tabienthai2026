@@ -574,7 +574,7 @@ header .menu-top ul li a:hover {
 
 footer {
   background: #3F3027;
-  padding: 60px 0 80px;
+  padding: 60px 0 0px;
   color: #fff;
 }
 footer a {
@@ -638,6 +638,7 @@ footer .copyright {
   text-align: center;
   font-size: 16px;
   background: #171411;
+  margin: 40px 0 0;
 }
 
 .shadow {
