@@ -46,7 +46,20 @@ img {
 }
 
 .bg-gradient, .card-tabein .card-price {
-  background: linear-gradient(45deg, #3F3027 0%, #765642 100%);
+  background: linear-gradient(45deg, #3f3027 0%, #765642 100%);
+}
+
+.breadcrumbs {
+  background: #c0ab9a;
+  padding: 10px 0;
+}
+.breadcrumbs nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.breadcrumbs nav a:hover {
+  color: #7B5C4B;
 }
 
 @media (max-width: 1210px) {
@@ -797,6 +810,155 @@ header .menu-top ul li a:hover {
   }
   .premium-number .number-list {
     gap: 8px;
+  }
+}
+.detail-search {
+  background: url("../images/bg-detail-search.jpg") no-repeat center/cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+.detail-search h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  margin: 0 0 20px;
+}
+
+.detail-tabien {
+  padding: 40px 0;
+  background: #efe8e2;
+}
+.detail-tabien .detail-tabien-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.detail-tabien .detail-tabien-content .contact-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.detail-tabien .detail-tabien-content .contact-top a {
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  width: 49px;
+  height: 49px;
+}
+.detail-tabien .left {
+  width: 307px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.detail-tabien .right {
+  width: calc(100% - 307px);
+  max-width: 100%;
+  padding-left: 22px;
+}
+.detail-tabien .right h1 {
+  font-size: 50px;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+}
+.detail-tabien .right h2 {
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  color: #f00;
+  margin: 4px 0 12px;
+}
+.detail-tabien .right h3 {
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+}
+.detail-tabien .right table {
+  margin: 22px 0;
+  width: 100%;
+}
+.detail-tabien .right table td {
+  padding: 12px 10px;
+  font-size: 22px;
+}
+.detail-tabien .right table td:first-child {
+  width: 200px;
+}
+.detail-tabien .right table tr:nth-child(odd) td {
+  background: #f7f5f2;
+  border-top: 1px solid #3f3027;
+  border-bottom: 1px solid #3f3027;
+}
+.detail-tabien .right .contact-button {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.detail-tabien .right .contact-button a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 60px;
+  min-width: 305px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+}
+.detail-tabien .right .contact-button a.line {
+  background: #06C755;
+}
+.detail-tabien .right .contact-button a.phone {
+  background: #fff;
+  color: #3f3027;
+}
+
+@media (max-width: 1210px) {
+  .detail-tabien .right {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+}
+@media (max-width: 1023px) {
+  .detail-tabien .right h1 {
+    font-size: 40px;
+  }
+  .detail-tabien .right h2 {
+    font-size: 26px;
+  }
+  .detail-tabien .right h3 {
+    font-size: 20px;
+  }
+  .detail-tabien .right table td {
+    font-size: 16px;
+  }
+  .detail-tabien .right table td:first-child {
+    width: 130px;
+  }
+  .detail-tabien .right .contact-button {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .detail-tabien .left {
+    width: 100%;
+    padding-top: 80px;
+  }
+  .detail-tabien .tabien-card .bottom {
+    display: flex;
+  }
+  .detail-tabien .tabien-card .bottom .sum {
+    width: 60px;
   }
 }
 footer {
