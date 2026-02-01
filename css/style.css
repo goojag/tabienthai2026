@@ -414,12 +414,23 @@ header .menu-top ul li a:hover {
 }
 
 @media (max-width: 1210px) {
+  header {
+    padding: 0;
+    height: auto;
+  }
   header .top-bar {
+    font-size: 12px;
+    white-space: nowrap;
+    width: 100vw;
+    overflow: auto;
+  }
+  header .top-bar::webkit-scrollbar {
     display: none;
   }
-  header {
-    padding: 10px 0;
-    height: auto;
+  header .top-bar .container {
+    width: fit-content;
+    max-width: none;
+    gap: 22px;
   }
   header .logo {
     width: 120px;
@@ -1136,24 +1147,6 @@ footer .copyright {
   }
   .tabien-list ul {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .tabien-ig ul {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .tabien-ig ul li:nth-child(2n) {
-    margin-top: 0;
-  }
-  .why-9na {
-    padding: 0px 0;
-  }
-  .why-9na .why-img {
-    width: 100%;
-  }
-  .why-9na .why-box-text {
-    width: 100%;
-    position: static;
-    padding: 20px;
   }
   footer {
     padding: 30px 0;

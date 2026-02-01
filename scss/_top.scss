@@ -104,12 +104,26 @@ header {
 
 @include max-width-lg {
   header {
-    .top-bar {
-      display: none;
-    }
-
-    padding: 10px 0;
+    padding: 0;
     height: auto;
+
+    .top-bar {
+      // display: none;
+      font-size: 12px;
+      white-space: nowrap;
+      width: 100vw;
+      overflow: auto;
+
+      &::webkit-scrollbar {
+        display: none;
+      }
+
+      .container{
+        width: fit-content;
+        max-width: none;
+        gap: 22px;
+      }
+    }
 
     .logo{
       width:120px;
