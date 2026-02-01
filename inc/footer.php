@@ -1,4 +1,30 @@
 <footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="content">
+        <h3>เรามีทะเบียนสวยเลขศาสตร์ผลรวมดี<br/>
+ในราคาพิเศษสุดที่นี่</h3>
+        <a href="/">
+          <div class="content-card">
+            <img src="images/line-green.svg" alt="">
+            <div class="content-right">
+              <p>สอบถามข้อมูลเพิ่มเติม ได้ที่ช่องทางไลน์</p>
+              <strong>@tabiendee</strong>
+            </div>
+          </div>
+        </a>
+        <a href="/">
+          <div class="content-card">
+            <img src="images/phone-brown.svg" alt="">
+            <div class="content-right">
+              <p>สอบถามข้อมูลเพิ่มเติมทางโทรศัพท์</p>
+              <strong>098-555-5555</strong>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="flex">
       <div class="left">

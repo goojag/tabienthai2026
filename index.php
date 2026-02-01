@@ -168,15 +168,17 @@
           <?php for($i = 0; $i < 14; $i++) { ?>
 
           <li>
-            <div class="card-number">
-              <div class="card-number-inner">
-                <h3 class="number">081-555-5555</h3>
-                <div class="bottom">
-                  <span class="price-label">ราคา</span>
-                  <span class="price">2,990,000</span>
+            <a href="/">
+              <div class="card-number">
+                <div class="card-number-inner">
+                  <h3 class="number">081-555-5555</h3>
+                  <div class="bottom">
+                    <span class="price-label">ราคา</span>
+                    <span class="price">2,990,000</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </li>
 
           <?php } ?>
