@@ -1,63 +1,93 @@
-footer{
-  background: $themecolor1;
-  padding: 80px 0;
-  color:#fff;
+footer {
+  background: $themecolor3;
+  padding: 60px 0 80px;
+  color: #fff;
 
-  .copyright-foot{
-    padding:20px 0 10px 0;
-    font-weight: 200;
-    font-size: 14px;
+  a {
+    color: #fff;
   }
 
-  .social-foot{
-    a{
-      margin-right:10px;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+  }
 
-      img{
-        height: 35px;
-        width: auto;
+  .left,
+  .center,
+  .right {
+    flex: 1;
+  }
+
+  .left {
+    .logo {
+      width: 198px;
+      display: block;
+
+      img {
+        width: 100%;
       }
     }
-  }
 
-  a{
-    color:#fff;
-
-    &:hover{
-      color: #fff;
-      text-decoration: underline;
-    }
-  }
-
-  ul{
-
-    h3{
-      font-weight: 300;
+    h3 {
       font-size: 22px;
-      margin: 0 0 30px;
+      margin: 18px 0 12px;
+      font-weight: 600;
     }
-    
-    li{
-      list-style: none;
-      font-weight: 200;
-      
-      p{
-        margin: 0 0 10px;
+
+    p {
+      font-size: 16px;
+    }
+
+    a {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  .center {
+    nav {
+      a {
+        display: block;
+        padding: 6px 0;
+        font-size: 16px;
       }
     }
   }
 
-  .subscrib-btn{
-    background: url("../images/icons/subscrib.svg") #fff no-repeat right 10px center;
+  .right {
+    .dbd {
+      display: block;
+
+      p {
+        margin: 12px 0 12px;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 25px;
+      margin: 40px 0 0;
+
+      a {
+        border-radius: 50%;
+        transition: all 300ms;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }
 
-.shadow{
-  background:rgba(0,0,0,0.7);
+.shadow {
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
-  top:0;
-  left:0;
-  width:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   z-index: 11;
   display: none;

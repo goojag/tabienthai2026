@@ -1,52 +1,41 @@
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-md-5">
-        <a href="/" class="foot-logo">
-          <img src="images/logo.svg" alt="">
+    <div class="flex">
+      <div class="left">
+        <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
+        <h3>ทะเบียนสวยเลขศาสตร์ผลรวมดี</h3>
+        <p>ทะเบียนรถทุกตัวสามารถใช้ได้ทั้งรถใหม่ (ป้ายแดง) หรือ รถเก่า (โดยการสลับป้าย) ทะเบียนรถทุกตัวเป็นทะเบียนใหม่
+          และ เป็นทะเบียนกราฟฟิค ออกโดยกรมขนส่งฯ อย่างถูกต้อง
+          ติดต่อนายทะเบียนที่เบอร์
+          <a href="/">098-555-5555</a>
+        </p>
+      </div>
+      <div class="center">
+        <nav class="menu-footer">
+          <a href="/">หน้าแรก</a>
+          <a href="/">เอกสารที่ต้องใช้และวิธีการจดทะเบียนรถ</a>
+          <a href="/">ดูดวงกับทะเบียนรถ</a>
+          <a href="/">ติดต่อเรา</a>
+          <a href="/">เลือกหมวด</a>
+        </nav>
+      </div>
+      <div class="right">
+        <a href="/" class="dbd">
+          <img src="images/dbd-white.svg" alt="">
+          <p>กรมพัฒนาธุรกิจการค้า Trustmarkthai</p>
         </a>
-        <div class="copyright-foot">
-          <p>
-            Copyrights MiCasa Homes and Properties<br>All rights reserved.
-          </p>
-        </div>
-
-        <div class="social-foot">
-          <a href="" target="_blank"><img src="images/icons/ig.svg" alt=""></a>
-          <a href="" target="_blank"><img src="images/icons/world.svg" alt=""></a>
-          <a href="" target="_blank"><img src="images/icons/tw.svg" alt=""></a>
-          <a href="" target="_blank"><img src="images/icons/yt.svg" alt=""></a>
+        <div class="social">
+          <a href="/">
+            <img src="images/icons/phone-white.svg" alt="">
+          </a>
+          <a href="/">
+            <img src="images/icons/line-white.svg" alt="">
+          </a>
+          <a href="/">
+            <img src="images/icons/fb-white.svg" alt="">
+          </a>
         </div>
       </div>
-
-      <div class="col-md-7">
-        <nav class="menu-foot">
-          <ul class="row">
-            <li class="col-md-3 col-6">
-              <h3>Company</h3>
-              <p><a href="">About us</a></p>
-              <p><a href="">Blog</a></p>
-              <p><a href="">Contact us</a></p>
-              <p><a href="">Pricing</a></p>
-              <p><a href="">Testimonials</a></p>
-            </li>
-            <li class="col-md-3 col-6">
-              <h3>Support</h3>
-              <p><a href="">Help center</a></p>
-              <p><a href="">Terms of service</a></p>
-              <p><a href="">Legal</a></p>
-              <p><a href="">Privacy policy</a></p>
-              <p><a href="">Status</a></p>
-            </li>
-            <li class="col-md-6">
-              <h3>Stay up to date</h3>
-              <p><input type="email" name="" class="subscrib-btn" placeholder="Your email address"></p>
-            </li>
-          </ul>
-        </nav>
-      </div> <!-- end .col-md-7 -->
-
-
     </div>
   </div>
 </footer>
