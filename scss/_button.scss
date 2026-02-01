@@ -32,3 +32,9 @@
     outline: none;
   }
 }
+
+@include max-width-sm {
+  .btn-toggle {
+    font-size: 22px;
+  }
+}

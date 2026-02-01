@@ -6,6 +6,32 @@
     display: block;
     width: 100%;
   }
+
+  .main-slide{
+    .slick-next, .slick-prev {
+      background: url("../images/icons/arr-down.svg") rgba(192, 171, 154, 0.6) no-repeat center /20px;
+      width: 50px;
+      height: 50px;
+      z-index: 2;
+      border-radius: 50%;
+
+      &:before {
+        display: none !important;
+        content: '';
+      }
+    }
+
+    .slick-next{
+      right: 20px;
+      transform: rotate(-90deg);
+      
+    }
+
+    .slick-prev{
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .home-search{
@@ -37,6 +63,7 @@
     align-items: center;
     width: 1080px;
     margin: 0 auto;
+    max-width: 100%;
 
     .left{
       width: calc(100% - 630px);
@@ -160,6 +187,121 @@
       border: 1px solid $themecolor1;
       border-radius: 3px;
       padding: 0 8px;
+    }
+  }
+}
+
+
+
+@include max-width-lg {
+  .premium-number {
+    .number-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .tabien-section {
+    nav {
+      flex-wrap: wrap;
+    }
+  }
+
+  .special-tabien {
+    .special-tabien-content {
+      flex-wrap: wrap;
+
+      .left {
+        width: 100%;
+        padding: 0 0 22px;
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include max-width-md {
+  .home-search{
+    padding: 20px 20px 50px;
+
+    .search-form{
+      form{
+
+        .column{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .premium-number {
+    .number-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include max-width-sm {
+  .main-slide {
+    .slick-next, .slick-prev {
+      display: none !important;
+    }
+  }
+
+  .home-search {
+    padding: 20px 0;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .special-tabien {
+    .special-tabien-content {
+      .left {
+        h2 {
+          font-size: 32px;
+        }
+
+        h3 {
+          font-size: 26px;
+        }
+
+        h4 {
+          font-size: 22px;
+
+          br {
+            display: none;
+          }
+        }
+
+        .contact {
+          flex-wrap: wrap;
+        }
+      }
+
+      .right {
+        .first {
+          gap: 8px;
+        }
+
+        .second {
+          gap: 8px;
+        }
+      }
+    }
+  }
+
+  .premium-number {
+    padding: 44px 0;
+
+    h4 {
+      font-size: 22px;
+    }
+    .number-list {
+      gap: 8px;
     }
   }
 }

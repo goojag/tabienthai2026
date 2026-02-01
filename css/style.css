@@ -49,6 +49,12 @@ img {
   background: linear-gradient(45deg, #3F3027 0%, #765642 100%);
 }
 
+@media (max-width: 1210px) {
+  .container {
+    width: 98%;
+    max-width: none;
+  }
+}
 .form-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -110,6 +116,7 @@ input[type=text], input[type=email] {
 
 .search-form {
   width: 1000px;
+  max-width: 100%;
   margin: auto;
 }
 .search-form form {
@@ -164,6 +171,11 @@ input[type=text], input[type=email] {
   outline: none;
 }
 
+@media (max-width: 640px) {
+  .btn-toggle {
+    font-size: 22px;
+  }
+}
 .card-number {
   position: relative;
   width: 100%;
@@ -278,6 +290,33 @@ input[type=text], input[type=email] {
   color: #fff;
 }
 
+@media (max-width: 640px) {
+  .tabien-card {
+    padding: 4px;
+    border-radius: 8px;
+  }
+  .tabien-card .tabien-thumb .tabien-text .number {
+    font-size: 22px;
+  }
+  .tabien-card .tabien-thumb .tabien-text .province {
+    font-size: 12px;
+  }
+  .tabien-card .bottom {
+    display: block;
+  }
+  .tabien-card .bottom .sum {
+    width: 100%;
+  }
+  .card-number .number {
+    font-size: 22px;
+  }
+  .card-number .bottom .price {
+    font-size: 18px;
+  }
+  .card-number .bottom .price-label {
+    font-size: 14px;
+  }
+}
 header {
   padding: 0;
   position: relative;
@@ -361,6 +400,75 @@ header .menu-top ul li a:hover {
   display: none;
 }
 
+@media (max-width: 1210px) {
+  header .top-bar {
+    display: none;
+  }
+  header {
+    padding: 10px 0;
+    height: auto;
+  }
+  header .logo {
+    width: 120px;
+    margin: 0;
+    position: static;
+  }
+  header .menu-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: #3F3027;
+    z-index: 13;
+    padding: 0;
+    width: 300px;
+    right: -100%;
+    transition: all 300ms;
+  }
+  header .menu-top.show {
+    right: 0;
+  }
+  header .menu-top ul {
+    display: block;
+    width: 100%;
+  }
+  header .menu-top ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  header .menu-top ul li:nth-child(3), header .menu-top ul li:nth-child(4) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .menu-top ul li a {
+    width: 100%;
+    display: block;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  header .menu-top ul li a:hover {
+    color: #fff;
+  }
+  .menu-hamberger {
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding: 13px;
+    background: #3F3027;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 12;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .menu-hamberger img {
+    display: block;
+    width: 100%;
+  }
+}
 .card-tabein {
   display: flex;
   flex-direction: column;
@@ -430,6 +538,35 @@ header .menu-top ul li a:hover {
   transform: rotate(180deg);
 }
 
+@media (max-width: 1210px) {
+  .tabien-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1023px) {
+  .tabien-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+}
+@media (max-width: 640px) {
+  .card-tabein .card-content .card-title {
+    font-size: 22px;
+    margin: 0;
+  }
+  .card-tabein .card-content p {
+    font-size: 12px;
+  }
+  .card-tabein.big .card-content .card-title {
+    font-size: 32px;
+  }
+  .card-tabein.big .card-content p {
+    font-size: 14px;
+  }
+  .card-tabein .card-price {
+    font-size: 20px;
+  }
+}
 .banner-main {
   width: 100%;
   overflow: hidden;
@@ -437,6 +574,25 @@ header .menu-top ul li a:hover {
 .banner-main a, .banner-main img {
   display: block;
   width: 100%;
+}
+.banner-main .main-slide .slick-next, .banner-main .main-slide .slick-prev {
+  background: url("../images/icons/arr-down.svg") rgba(192, 171, 154, 0.6) no-repeat center/20px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  border-radius: 50%;
+}
+.banner-main .main-slide .slick-next:before, .banner-main .main-slide .slick-prev:before {
+  display: none !important;
+  content: "";
+}
+.banner-main .main-slide .slick-next {
+  right: 20px;
+  transform: rotate(-90deg);
+}
+.banner-main .main-slide .slick-prev {
+  left: 20px;
+  transform: rotate(90deg);
 }
 
 .home-search {
@@ -465,6 +621,7 @@ header .menu-top ul li a:hover {
   align-items: center;
   width: 1080px;
   margin: 0 auto;
+  max-width: 100%;
 }
 .special-tabien .special-tabien-content .left {
   width: calc(100% - 630px);
@@ -572,10 +729,82 @@ header .menu-top ul li a:hover {
   padding: 0 8px;
 }
 
+@media (max-width: 1210px) {
+  .premium-number .number-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tabien-section nav {
+    flex-wrap: wrap;
+  }
+  .special-tabien .special-tabien-content {
+    flex-wrap: wrap;
+  }
+  .special-tabien .special-tabien-content .left {
+    width: 100%;
+    padding: 0 0 22px;
+  }
+  .special-tabien .special-tabien-content .right {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .home-search {
+    padding: 20px 20px 50px;
+  }
+  .home-search .search-form form .column {
+    width: 100%;
+  }
+  .premium-number .number-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .main-slide .slick-next, .main-slide .slick-prev {
+    display: none !important;
+  }
+  .home-search {
+    padding: 20px 0;
+  }
+  .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .special-tabien .special-tabien-content .left h2 {
+    font-size: 32px;
+  }
+  .special-tabien .special-tabien-content .left h3 {
+    font-size: 26px;
+  }
+  .special-tabien .special-tabien-content .left h4 {
+    font-size: 22px;
+  }
+  .special-tabien .special-tabien-content .left h4 br {
+    display: none;
+  }
+  .special-tabien .special-tabien-content .left .contact {
+    flex-wrap: wrap;
+  }
+  .special-tabien .special-tabien-content .right .first {
+    gap: 8px;
+  }
+  .special-tabien .special-tabien-content .right .second {
+    gap: 8px;
+  }
+  .premium-number {
+    padding: 44px 0;
+  }
+  .premium-number h4 {
+    font-size: 22px;
+  }
+  .premium-number .number-list {
+    gap: 8px;
+  }
+}
 footer {
   background: #3F3027;
   padding: 0px;
   color: #fff;
+  width: 100%;
+  overflow: hidden;
 }
 footer .footer-top {
   background: url("../images/bg-wood.jpg") no-repeat center/cover;
@@ -689,80 +918,52 @@ footer .copyright {
   display: none;
 }
 
-@media only screen and (max-width: 1196px) {
-  .menu-hamberger {
-    display: block;
-    width: 45px;
-    padding: 5px 10px;
-    background: #3F3027;
-    position: fixed;
-    top: 15px;
-    right: 10px;
-    z-index: 12;
+@media (max-width: 1023px) {
+  footer .footer-top .content {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .menu-hamberger img {
-    display: block;
+  footer .footer-top .content .content-card img {
+    width: 50px;
+  }
+  footer .footer-top .content .content-card p {
+    font-size: 14px;
+  }
+  footer .footer-top .content h3 {
+    width: 100%;
+    flex-shrink: 0;
+    flex: unset;
+    text-align: center;
+  }
+  footer .footer-top .content a {
+    width: 45%;
+    flex: unset;
+  }
+  footer .flex {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  footer .flex .left, footer .flex .center, footer .flex .right {
     width: 100%;
   }
-  .container {
-    width: 98%;
-    max-width: none;
-  }
-  header {
-    padding: 10px 0;
-    height: auto;
-  }
-  header .logo {
-    width: 60px;
+  footer .flex .left p {
     margin: 0;
-    position: static;
   }
-  header .menu-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    background: #3F3027;
-    z-index: 13;
-    padding: 0;
-    width: 300px;
-    right: -100%;
-    transition: all 300ms;
+}
+@media (max-width: 640px) {
+  footer .footer-top {
+    padding: 40px 0;
   }
-  header .menu-top.show {
-    right: 0;
+  footer .footer-top .content h3 {
+    font-size: 22px;
   }
-  header .menu-top ul {
-    display: block;
+  footer .footer-top .content a {
     width: 100%;
-  }
-  header .menu-top ul li {
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  header .menu-top ul li:nth-child(3), header .menu-top ul li:nth-child(4) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  header .menu-top ul li a {
-    width: 100%;
-    display: block;
-    padding: 20px 25px;
-    box-sizing: border-box;
+    flex: unset;
   }
 }
 @media only screen and (max-width: 767px) {
-  .home-search {
-    padding: 20px 20px 50px;
-  }
-  .home-search .search-form form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .home-search .search-form form .column {
-    width: 100%;
-  }
   .box-tabien .tabien-select {
     position: static;
     width: 100%;

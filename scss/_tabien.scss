@@ -88,3 +88,47 @@
     }
   }
 }
+
+@include max-width-lg {
+  .tabien-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@include max-width-md {
+  .tabien-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+}
+
+@include max-width-sm {
+  .card-tabein {
+    .card-content {
+      .card-title {
+        font-size: 22px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &.big {
+      .card-content {
+        .card-title {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .card-price {
+      font-size: 20px;
+    }
+  }
+}

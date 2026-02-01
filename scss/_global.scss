@@ -48,3 +48,11 @@ img {
 .bg-gradient {
   background: linear-gradient(45deg, #3F3027 0%, #765642 100%);
 }
+
+
+@include max-width-lg {
+  .container {
+    width:98%;
+    max-width: none;
+  }
+}

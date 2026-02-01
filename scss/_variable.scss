@@ -5,3 +5,58 @@ $themecolor4: #FC840C;
 
 $textcolor1: #3F3027;
 $textcolor2: #171411;
+
+
+@mixin min-width-xs {
+  @media (min-width: 476px) {
+    @content;
+  }
+}
+@mixin min-width-sm {
+  @media (min-width: 641px) {
+    @content;
+  }
+}
+@mixin min-width-md {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin min-width-lg {
+  @media (min-width: 1211px) {
+    @content;
+  }
+}
+@mixin min-width-xl {
+  @media (min-width: 1441px) {
+    @content;
+  }
+}
+
+@mixin max-width-xs {
+  @media (max-width: 475px) {
+    @content;
+  }
+}
+@mixin max-width-sm {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin max-width-md {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin max-width-lg {
+  @media (max-width: 1210px) {
+    @content;
+  }
+}
+@mixin max-width-xl {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}

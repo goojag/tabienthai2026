@@ -382,18 +382,6 @@
       fade: false,
       arrows: true
     });
-
-    // Tabien ajax filter on change
-    $("#select-tabien").on('change', function() {
-      $.ajax({
-        type: 'POST',
-        url: "tabien-filter.php",
-        data: "tabien-name= " + $(this).val(),
-        success: function(result) {
-          $(".tabien-section").html(result);
-        }
-      });
-    });
   })
   </script>
 

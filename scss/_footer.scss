@@ -2,6 +2,8 @@ footer {
   background: $themecolor3;
   padding: 0px;
   color: #fff;
+  width: 100%;
+  overflow: hidden;
 
   .footer-top {
     background: url("../images/bg-wood.jpg") no-repeat center /cover;
@@ -145,4 +147,74 @@ footer {
   height: 100%;
   z-index: 11;
   display: none;
+}
+
+
+@include max-width-md {
+  footer {
+    .footer-top {
+      .content {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .content-card {
+          img {
+            width: 50px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        h3 {
+          width: 100%;
+          flex-shrink: 0;
+          flex: unset;
+          text-align: center;
+        }
+
+        a {
+          width: 45%;
+          flex: unset;
+        }
+      }
+    }
+
+    .flex {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+
+      .left, .center, .right {
+        width: 100%;
+      }
+
+      .left {
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@include max-width-sm {
+  footer {
+    .footer-top {
+      padding: 40px 0;
+
+      .content {
+        
+        h3 {
+          font-size: 22px;
+        }
+
+        a {
+          width: 100%;
+          flex: unset;
+        }
+      }
+    }
+  }
 }

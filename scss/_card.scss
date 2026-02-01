@@ -142,3 +142,45 @@
     }
   }
 }
+
+@include max-width-sm {
+  .tabien-card {
+    padding: 4px;
+    border-radius: 8px;
+
+    .tabien-thumb {
+      .tabien-text {
+        .number {
+          font-size: 22px;
+        }
+
+        .province {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .bottom {
+      display: block;
+
+      .sum {
+        width: 100%;
+      }
+    }
+  }
+  .card-number {
+    .number {
+      font-size: 22px;
+    }
+
+    .bottom {
+      .price {
+        font-size: 18px;
+      }
+
+      .price-label {
+        font-size: 14px;
+      }
+    }
+  }
+}
