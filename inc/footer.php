@@ -38,6 +38,9 @@
       </div>
     </div>
   </div>
+  <section class="copyright">
+    © 2026 Tabienthai. All rights reserved.
+  </section>
 </footer>
 <div class="shadow"></div>
 

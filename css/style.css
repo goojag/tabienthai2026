@@ -633,6 +633,12 @@ footer .right .social a {
 footer .right .social a:hover {
   transform: scale(1.1);
 }
+footer .copyright {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  background: #171411;
+}
 
 .shadow {
   background: rgba(0, 0, 0, 0.7);
